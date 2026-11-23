@@ -4,6 +4,8 @@
 	"main": "./worker.ts",
 	"compatibility_date": "2026-05-20",
 	"keep_vars": true,
+	"routes": [{ "pattern": "mailflare.applex.co", "custom_domain": true }],
+	"vars": { "APP_URL": "https://mailflare.applex.co", "CF_EMAIL_WORKER_NAME": "mailflare" },
 	"compatibility_flags": [
 		"nodejs_compat",
 		"global_fetch_strictly_public"
@@ -76,6 +78,7 @@
 		{
 			"binding": "DB",
 			"database_name": "mailflare",
+			"database_id": "3848dfad-eaa1-4ea3-a792-66a6e77b4944",
 			"migrations_dir": "drizzle/migrations",
 		},
 	],
